@@ -1,5 +1,4 @@
 from django.contrib import admin
-from .models import Area, Subject
+from .models import Area, Subject, Teacher, SchoolClass, PlanRow
 
-admin.site.register(Area)
-admin.site.register(Subject)
+admin.site.register([Area, Subject, Teacher, SchoolClass, PlanRow])
